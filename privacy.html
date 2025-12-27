@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — FreeLock</title>
+  <meta name="description" content="FreeLock Privacy Policy - Learn how we protect your data and privacy." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div>
+        <h1>🔐 FreeLock</h1>
+        <h2>Physical App Blocking for iOS</h2>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <h2>Privacy Policy</h2>
+      <p><strong>Last updated: December 27, 2025</strong></p>
+      <p>FreeLock ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application ("App").</p>
+
+      <h3>1. Data We Collect</h3>
+      <p><strong>On-Device Data:</strong></p>
+      <ul>
+        <li>NFC card identifiers (stored as SHA-256 hashes only)</li>
+        <li>App blocking preferences and configurations</li>
+        <li>Lock schedules and settings</li>
+        <li>Audit log of lock/unlock events</li>
+        <li>Emergency passcode (stored as SHA-256 hash)</li>
+        <li>Optional accountability contact email</li>
+      </ul>
+      <p><strong>No data collection:</strong> FreeLock does NOT collect, store, or transmit any of this data to our servers. Everything stays on your device.</p>
+
+      <h3>2. How We Use Your Data</h3>
+      <ul>
+        <li><strong>On-device processing:</strong> Your NFC card identifiers are hashed locally and compared on-device for authentication</li>
+        <li><strong>Local storage:</strong> All data is stored locally in the iOS Keychain and app private storage</li>
+        <li><strong>No sharing:</strong> We never share, sell, or transmit your data to third parties</li>
+        <li><strong>No analytics:</strong> We do not track your app usage or behavior</li>
+      </ul>
+
+      <h3>3. Data Security</h3>
+      <p>Your data is protected by:</p>
+      <ul>
+        <li>iOS Keychain encryption for sensitive data (tokens, passcode, contacts)</li>
+        <li>SHA-256 hashing of NFC card identifiers (original values never stored)</li>
+        <li>On-device only storage with no cloud backup</li>
+        <li>Device-level encryption provided by iOS</li>
+      </ul>
+
+      <h3>4. Third-Party Services</h3>
+      <p><strong>Apple Screen Time API:</strong> FreeLock uses Apple's FamilyControls and ManagedSettings frameworks to block apps. Apple does not receive information about which apps you block. See <a href="https://www.apple.com/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+      <p><strong>Accountability Notifications (Optional):</strong> If you configure an accountability contact, emergency unlock events may be sent to our notification service. This includes only:</p>
+      <ul>
+        <li>An anonymized device identifier (hash)</li>
+        <li>The event type (e.g., "emergency_unlock")</li>
+        <li>Timestamp</li>
+        <li>Your accountability contact's email address</li>
+      </ul>
+      <p>No other data is transmitted. The accountability feature is entirely optional.</p>
+
+      <h3>5. Your Privacy Rights</h3>
+      <p>Since all your data is stored on your device:</p>
+      <ul>
+        <li>You have full control and ownership of your data</li>
+        <li>You can delete tokens anytime from Settings</li>
+        <li>You can export your audit log in text format</li>
+        <li>You can use Emergency Delete to remove all data</li>
+        <li>You can uninstall the app to remove all data</li>
+      </ul>
+
+      <h3>6. Children's Privacy</h3>
+      <p>FreeLock is not intended for children under 13. We do not knowingly collect data from children. If you are under 13, please do not use this app.</p>
+
+      <h3>7. Changes to This Policy</h3>
+      <p>We may update this Privacy Policy periodically. Your continued use of FreeLock after updates means you accept the changes.</p>
+
+      <h3>8. Contact Us</h3>
+      <p>Questions about this Privacy Policy? Contact us at <strong>support@freelock.app</strong>.</p>
+
+      <hr />
+      <p><strong>Bottom Line:</strong> Your data is yours and yours alone. We don't collect, store, or share your data. FreeLock is 100% private by design.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 FreeLock. All rights reserved. | <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a></p>
+    </div>
+  </footer>
+</body>
+</html>
