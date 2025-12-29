@@ -1,77 +1,239 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FreeLock - Physical App Blocking</title>
-  <meta name="description" content="FreeLock is a privacy-first iOS app that lets you block distracting apps with physical NFC cards. No accounts, no cloud, no remote control." />
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeLock - Focus Made Simple</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'DM Sans', sans-serif; }
+        .blob {
+            position: absolute;
+            filter: blur(40px);
+            z-index: -1;
+            opacity: 0.4;
+        }
+    </style>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <div>
-        <h1>🔐 FreeLock</h1>
-        <h2>Physical App Blocking for iOS</h2>
-      </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-      </nav>
-    </div>
-  </header>
+<body class="bg-orange-50 text-slate-800 overflow-x-hidden">
 
-  <main class="container">
-    <article>
-      <h2>FreeLock - Take Back Control</h2>
-      <p><strong>Block Apps. Unlock with a Physical Card. 100% Private.</strong></p>
-      
-      <h3>About FreeLock</h3>
-      <p>FreeLock is a privacy-first app blocker that uses physical NFC cards or tags as unlock keys. When you activate FreeLock, your selected apps are blocked until you physically scan your unlock card. No willpower required—just physical accountability.</p>
-      
-      <h3>Key Features</h3>
-      <ul>
-        <li>🔐 <strong>Physical Unlock</strong> — Block apps and unlock only with your NFC card</li>
-        <li>🛡️ <strong>100% Private</strong> — All data stays on your device, no cloud sync</li>
-        <li>📴 <strong>Works Offline</strong> — No internet required, no remote control</li>
-        <li>🚨 <strong>Emergency Unlock</strong> — Always accessible with passcode + biometrics</li>
-        <li>👥 <strong>Accountability</strong> — Optional notifications to a trusted contact</li>
-        <li>📋 <strong>Audit Log</strong> — Track your usage and unlock history locally</li>
-      </ul>
-      
-      <h3>How It Works</h3>
-      <ol>
-        <li><strong>Register</strong> — Scan any NFC card or tag (old credit cards work!)</li>
-        <li><strong>Select Apps</strong> — Choose which apps to block using Screen Time</li>
-        <li><strong>Lock</strong> — Tap "Lock Now" to activate blocking</li>
-        <li><strong>Unlock</strong> — Scan your registered card to restore access</li>
-      </ol>
-      
-      <h3>Privacy Commitment</h3>
-      <p>FreeLock is designed around privacy from the ground up:</p>
-      <ul>
-        <li>No analytics or tracking</li>
-        <li>No account or sign-in required</li>
-        <li>No cloud storage or sync</li>
-        <li>All data stays on your device</li>
-        <li>NFC card IDs are stored as secure hashes</li>
-        <li>Open and transparent about what happens to your data</li>
-      </ul>
-      
-      <h3>Get Started</h3>
-      <p>Download FreeLock from the App Store and start building better focus habits.</p>
-      
-      <hr />
-      
-      <p>Questions? See our <a href="privacy.html">Privacy Policy</a> or <a href="terms.html">Terms of Service</a>.</p>
-    </article>
-  </main>
+    <!-- Background Blobs -->
+    <div class="blob bg-orange-300 w-96 h-96 rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="blob bg-yellow-300 w-96 h-96 rounded-full bottom-0 right-0 translate-x-1/2 translate-y-1/2"></div>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 FreeLock. All rights reserved. | <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a></p>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header -->
+        <header class="flex justify-between items-center py-8">
+            <div class="flex items-center gap-3">
+                <img src="img/icon.webp" alt="FreeLock Icon" class="w-12 h-12 rounded-xl shadow-md">
+                <span class="font-bold text-2xl tracking-tight text-slate-900">FreeLock</span>
+            </div>
+            <nav class="hidden md:flex gap-8 font-medium text-slate-600">
+                <a href="#how-it-works" class="hover:text-orange-600 transition">How it Works</a>
+                <a href="#features" class="hover:text-orange-600 transition">Features</a>
+                <a href="privacy.html" class="hover:text-orange-600 transition">Privacy</a>
+            </nav>
+            <a href="#" class="bg-orange-600 text-white px-6 py-2.5 rounded-full font-medium hover:bg-orange-700 transition shadow-lg shadow-orange-600/20">
+                Get the App
+            </a>
+        </header>
+
+        <!-- Hero -->
+        <main class="py-12 lg:py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="inline-block px-4 py-1.5 bg-white border border-orange-100 rounded-full text-sm font-semibold text-orange-600 mb-6 shadow-sm">
+                        ✨ The new way to focus
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-bold text-slate-900 leading-tight mb-6">
+                        Lock your apps. <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-red-600">Unlock your life.</span>
+                    </h1>
+                    <p class="text-xl text-slate-600 mb-8 leading-relaxed max-w-lg">
+                        Stop doom-scrolling. FreeLock uses physical NFC cards to keep your distracting apps locked away until you really need them.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="flex items-center justify-center gap-3 bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold hover:bg-slate-800 transition shadow-xl shadow-slate-900/20">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.21-1.98 1.07-3.11-1.04.05-2.29.69-3.02 1.55-.67.78-1.26 2.03-1.11 3.15 1.16.09 2.34-.75 3.06-1.59"/></svg>
+                            Download on App Store
+                        </a>
+                    </div>
+
+                    <div class="mt-12 flex items-center gap-4 text-sm text-slate-500 font-medium">
+                        <div class="flex -space-x-2">
+                            <div class="w-8 h-8 rounded-full bg-gray-300 border-2 border-white"></div>
+                            <div class="w-8 h-8 rounded-full bg-gray-400 border-2 border-white"></div>
+                            <div class="w-8 h-8 rounded-full bg-gray-500 border-2 border-white"></div>
+                        </div>
+                        <p>Join 10,000+ focused users</p>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2 relative">
+                    <!-- Phone Mockup Placeholder -->
+                    <div class="relative mx-auto w-[300px] h-[600px] bg-slate-900 rounded-[3rem] shadow-2xl border-[8px] border-slate-900 overflow-hidden">
+                        <!-- Screen Content -->
+                        <div class="w-full h-full bg-white relative flex flex-col">
+                            <!-- Status Bar -->
+                            <div class="h-6 w-full bg-white absolute top-0 z-10"></div>
+                            
+                            <!-- App Header -->
+                            <div class="mt-8 px-6 mb-4">
+                                <h2 class="text-2xl font-bold text-slate-900">My Locks</h2>
+                            </div>
+
+                            <!-- App Content Placeholder -->
+                            <div class="flex-1 px-4 space-y-4">
+                                <!-- Active Lock Card -->
+                                <div class="bg-orange-50 p-4 rounded-2xl border border-orange-100">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="font-bold text-orange-800">Social Media</span>
+                                        <span class="bg-orange-200 text-orange-800 text-xs px-2 py-1 rounded-full font-bold">LOCKED</span>
+                                    </div>
+                                    <div class="flex gap-2 mt-3">
+                                        <div class="w-8 h-8 bg-white rounded-lg shadow-sm flex items-center justify-center text-lg">📸</div>
+                                        <div class="w-8 h-8 bg-white rounded-lg shadow-sm flex items-center justify-center text-lg">🎵</div>
+                                        <div class="w-8 h-8 bg-white rounded-lg shadow-sm flex items-center justify-center text-lg">🐦</div>
+                                    </div>
+                                </div>
+
+                                <!-- Unlock Prompt -->
+                                <div class="mt-8 text-center">
+                                    <div class="w-20 h-20 bg-orange-100 rounded-full mx-auto flex items-center justify-center mb-4 animate-pulse">
+                                        <svg class="w-10 h-10 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.2-2.85.577-4.147l.413-1.405"></path></svg>
+                                    </div>
+                                    <p class="font-bold text-slate-800">Tap NFC Card to Unlock</p>
+                                    <p class="text-sm text-slate-500 mt-1">Hold your card near the top of your iPhone</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Feature Cards -->
+                    <div class="absolute top-20 -right-4 bg-white p-4 rounded-2xl shadow-xl border border-orange-100 max-w-[180px] hidden lg:block animate-bounce" style="animation-duration: 3s;">
+                        <div class="text-2xl mb-2">💳</div>
+                        <p class="font-bold text-sm">Physical Key</p>
+                        <p class="text-xs text-slate-500">Use any NFC card</p>
+                    </div>
+
+                    <div class="absolute bottom-32 -left-8 bg-white p-4 rounded-2xl shadow-xl border border-orange-100 max-w-[180px] hidden lg:block animate-bounce" style="animation-duration: 4s;">
+                        <div class="text-2xl mb-2">🛡️</div>
+                        <p class="font-bold text-sm">100% Private</p>
+                        <p class="text-xs text-slate-500">No tracking ever</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Features List -->
+        <section id="features" class="py-20">
+            <div class="text-center mb-16">
+                <h2 class="text-orange-600 font-bold tracking-wide uppercase text-sm">Features</h2>
+                <p class="mt-2 text-3xl leading-8 font-bold tracking-tight text-slate-900 sm:text-4xl">Why FreeLock?</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-orange-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-2xl mb-4">⚡️</div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Setup in Seconds</h3>
+                    <p class="text-slate-600">Just scan any NFC card you have lying around. Old hotel keys, transit cards, or credit cards work perfectly.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-orange-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-2xl mb-4">🚨</div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Emergency Access</h3>
+                    <p class="text-slate-600">Need your phone for an emergency? Unlock with biometrics and a mandatory delay if you don't have your card.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-orange-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-2xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Accountability</h3>
+                    <p class="text-slate-600">Set up a trusted contact to be notified if you use the emergency unlock feature, adding an extra layer of accountability.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-orange-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-2xl mb-4">🔒</div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Privacy First</h3>
+                    <p class="text-slate-600">No accounts, no cloud sync, no tracking. Your data never leaves your device. We believe your habits are your business.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-orange-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-2xl mb-4">🔋</div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Battery Efficient</h3>
+                    <p class="text-slate-600">Designed to have zero impact on your battery life. FreeLock runs efficiently in the background only when needed.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-orange-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-2xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Native Experience</h3>
+                    <p class="text-slate-600">Built with SwiftUI for a smooth, native iOS experience that feels right at home on your iPhone.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section id="how-it-works" class="py-20 bg-white rounded-3xl my-12 px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-slate-900">How It Works</h2>
+                    <p class="mt-4 text-lg text-slate-600">Three simple steps to reclaim your time.</p>
+                </div>
+                
+                <div class="space-y-12">
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Register a Card</h3>
+                            <p class="text-slate-600 mt-2">Open FreeLock and scan any NFC-enabled card. This becomes your physical key.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Select Apps to Block</h3>
+                            <p class="text-slate-600 mt-2">Choose the apps that distract you the most. Social media, games, or news apps.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">3</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Lock & Focus</h3>
+                            <p class="text-slate-600 mt-2">Tap "Lock". The apps are now inaccessible. To use them again, you must physically tap your card to the back of your phone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-12 border-t border-slate-200 mt-12">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="img/icon.webp" alt="FreeLock Icon" class="w-8 h-8 rounded-lg">
+                        <span class="font-bold text-xl text-slate-900">FreeLock</span>
+                    </div>
+                    <p class="text-slate-500 text-sm max-w-xs">
+                        Physical accountability for a digital world. Built with privacy at its core.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm text-slate-500">
+                        <li><a href="privacy.html" class="hover:text-orange-600 transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-orange-600 transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-900 mb-4">Connect</h4>
+                    <ul class="space-y-2 text-sm text-slate-500">
+                        <li><a href="#" class="hover:text-orange-600 transition">Twitter</a></li>
+                        <li><a href="#" class="hover:text-orange-600 transition">GitHub</a></li>
+                        <li><a href="mailto:support@freelock.app" class="hover:text-orange-600 transition">Contact Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center text-slate-400 text-sm pt-8 border-t border-slate-100">
+                <p>&copy; 2025 FreeLock. All rights reserved.</p>
+            </div>
+        </footer>
+
     </div>
-  </footer>
 </body>
 </html>

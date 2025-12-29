@@ -1,100 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — FreeLock</title>
   <meta name="description" content="FreeLock Privacy Policy - Learn how we protect your data and privacy." />
-  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'DM Sans', sans-serif; }
+  </style>
 </head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <div>
-        <h1>🔐 FreeLock</h1>
-        <h2>Physical App Blocking for iOS</h2>
+<body class="bg-orange-50 text-slate-800">
+
+  <!-- Header -->
+  <header class="bg-white border-b border-orange-100 sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-6">
+        <a href="index.html" class="flex items-center gap-3 hover:opacity-80 transition">
+          <img src="img/icon.webp" alt="FreeLock Icon" class="w-10 h-10 rounded-xl shadow-sm">
+          <span class="font-bold text-xl tracking-tight text-slate-900">FreeLock</span>
+        </a>
+        <nav class="hidden md:flex gap-6 font-medium text-slate-600">
+          <a href="index.html" class="hover:text-orange-600 transition">Home</a>
+          <a href="privacy.html" class="text-orange-600">Privacy</a>
+          <a href="terms.html" class="hover:text-orange-600 transition">Terms</a>
+        </nav>
       </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <article>
-      <h2>Privacy Policy</h2>
-      <p><strong>Last updated: December 27, 2025</strong></p>
-      <p>FreeLock ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application ("App").</p>
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <article class="bg-white rounded-3xl shadow-sm border border-orange-100 p-8 md:p-12">
+      <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Privacy Policy</h1>
+      <p class="text-orange-600 font-medium mb-12">Last updated: December 27, 2025</p>
+      <div class="prose prose-slate max-w-none">
+        <p class="text-lg text-slate-600 leading-relaxed">FreeLock ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application ("App").</p>
 
-      <h3>1. Data We Collect</h3>
-      <p><strong>On-Device Data:</strong></p>
-      <ul>
-        <li>NFC card identifiers (stored as SHA-256 hashes only)</li>
-        <li>App blocking preferences and configurations</li>
-        <li>Lock schedules and settings</li>
-        <li>Audit log of lock/unlock events</li>
-        <li>Emergency passcode (stored as SHA-256 hash)</li>
-        <li>Optional accountability contact email</li>
-      </ul>
-      <p><strong>No data collection:</strong> FreeLock does NOT collect, store, or transmit any of this data to our servers. Everything stays on your device.</p>
+        <h2 class="text-2xl font-bold text-slate-900 mt-12 mb-4 flex items-center gap-3">
+          <span class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 font-bold text-sm">1</span>
+          Data We Collect
+        </h2>
+        <p class="font-semibold text-slate-900 mb-2">On-Device Data:</p>
+        <ul class="space-y-2 text-slate-600 ml-4">
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> NFC card identifiers (stored as SHA-256 hashes only)</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> App blocking preferences and configurations</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> Lock schedules and settings</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> Audit log of lock/unlock events</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> Emergency passcode (stored as SHA-256 hash)</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> Optional accountability contact email</li>
+        </ul>
+        <div class="bg-orange-50 border border-orange-200 rounded-xl p-4 mt-4">
+          <p class="font-semibold text-orange-900">No data collection:</p>
+          <p class="text-orange-800 mt-1">FreeLock does NOT collect, store, or transmit any of this data to our servers. Everything stays on your device.</p>
+        </div>
 
-      <h3>2. How We Use Your Data</h3>
-      <ul>
-        <li><strong>On-device processing:</strong> Your NFC card identifiers are hashed locally and compared on-device for authentication</li>
-        <li><strong>Local storage:</strong> All data is stored locally in the iOS Keychain and app private storage</li>
-        <li><strong>No sharing:</strong> We never share, sell, or transmit your data to third parties</li>
-        <li><strong>No analytics:</strong> We do not track your app usage or behavior</li>
-      </ul>
+        <h2 class="text-2xl font-bold text-slate-900 mt-12 mb-4 flex items-center gap-3">
+          <span class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 font-bold text-sm">2</span>
+          How We Use Your Data
+        </h2>
+        <ul class="space-y-3 text-slate-600 ml-4">
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> <strong class="text-slate-900">On-device processing:</strong> Your NFC card identifiers are hashed locally and compared on-device for authentication</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> <strong class="text-slate-900">Local storage:</strong> All data is stored locally in the iOS Keychain and app private storage</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> <strong class="text-slate-900">No sharing:</strong> We never share, sell, or transmit your data to third parties</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> <strong class="text-slate-900">No analytics:</strong> We do not track your app usage or behavior</li>
+        </ul>
 
-      <h3>3. Data Security</h3>
-      <p>Your data is protected by:</p>
-      <ul>
-        <li>iOS Keychain encryption for sensitive data (tokens, passcode, contacts)</li>
-        <li>SHA-256 hashing of NFC card identifiers (original values never stored)</li>
-        <li>On-device only storage with no cloud backup</li>
-        <li>Device-level encryption provided by iOS</li>
-      </ul>
+        <h2 class="text-2xl font-bold text-slate-900 mt-12 mb-4 flex items-center gap-3">
+          <span class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 font-bold text-sm">3</span>
+          Data Security
+        </h2>
+        <p class="text-slate-600 mb-3">Your data is protected by:</p>
+        <ul class="space-y-2 text-slate-600 ml-4">
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> iOS Keychain encryption for sensitive data (tokens, passcode, contacts)</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> SHA-256 hashing of NFC card identifiers (original values never stored)</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> On-device only storage with no cloud backup</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> Device-level encryption provided by iOS</li>
+        </ul>
 
-      <h3>4. Third-Party Services</h3>
-      <p><strong>Apple Screen Time API:</strong> FreeLock uses Apple's FamilyControls and ManagedSettings frameworks to block apps. Apple does not receive information about which apps you block. See <a href="https://www.apple.com/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
-      <p><strong>Accountability Notifications (Optional):</strong> If you configure an accountability contact, emergency unlock events may be sent to our notification service. This includes only:</p>
-      <ul>
-        <li>An anonymized device identifier (hash)</li>
-        <li>The event type (e.g., "emergency_unlock")</li>
-        <li>Timestamp</li>
-        <li>Your accountability contact's email address</li>
-      </ul>
-      <p>No other data is transmitted. The accountability feature is entirely optional.</p>
+        <h2 class="text-2xl font-bold text-slate-900 mt-12 mb-4 flex items-center gap-3">
+          <span class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 font-bold text-sm">4</span>
+          Third-Party Services
+        </h2>
+        <p class="text-slate-600"><strong class="text-slate-900">Apple Screen Time API:</strong> FreeLock uses Apple's FamilyControls and ManagedSettings frameworks to block apps. Apple does not receive information about which apps you block. See <a href="https://www.apple.com/privacy/" target="_blank" class="text-orange-600 hover:text-orange-700 underline">Apple's Privacy Policy</a>.</p>
+        <p class="text-slate-600 mt-4"><strong class="text-slate-900">Accountability Notifications (Optional):</strong> If you configure an accountability contact, emergency unlock events may be sent to our notification service. This includes only:</p>
+        <ul class="space-y-2 text-slate-600 ml-4 mt-2">
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> An anonymized device identifier (hash)</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> The event type (e.g., "emergency_unlock")</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> Timestamp</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> Your accountability contact's email address</li>
+        </ul>
+        <p class="text-slate-600 mt-3">No other data is transmitted. The accountability feature is entirely optional.</p>
 
-      <h3>5. Your Privacy Rights</h3>
-      <p>Since all your data is stored on your device:</p>
-      <ul>
-        <li>You have full control and ownership of your data</li>
-        <li>You can delete tokens anytime from Settings</li>
-        <li>You can export your audit log in text format</li>
-        <li>You can use Emergency Delete to remove all data</li>
-        <li>You can uninstall the app to remove all data</li>
-      </ul>
+        <h2 class="text-2xl font-bold text-slate-900 mt-12 mb-4 flex items-center gap-3">
+          <span class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 font-bold text-sm">5</span>
+          Your Privacy Rights
+        </h2>
+        <p class="text-slate-600 mb-3">Since all your data is stored on your device:</p>
+        <ul class="space-y-2 text-slate-600 ml-4">
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> You have full control and ownership of your data</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> You can delete tokens anytime from Settings</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> You can export your audit log in text format</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> You can use Emergency Delete to remove all data</li>
+          <li class="flex items-start"><span class="text-orange-500 mr-2">•</span> You can uninstall the app to remove all data</li>
+        </ul>
 
-      <h3>6. Children's Privacy</h3>
-      <p>FreeLock is not intended for children under 13. We do not knowingly collect data from children. If you are under 13, please do not use this app.</p>
+        <h2 class="text-2xl font-bold text-slate-900 mt-12 mb-4 flex items-center gap-3">
+          <span class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 font-bold text-sm">6</span>
+          Children's Privacy
+        </h2>
+        <p class="text-slate-600">FreeLock is not intended for children under 13. We do not knowingly collect data from children. If you are under 13, please do not use this app.</p>
 
-      <h3>7. Changes to This Policy</h3>
-      <p>We may update this Privacy Policy periodically. Your continued use of FreeLock after updates means you accept the changes.</p>
+        <h2 class="text-2xl font-bold text-slate-900 mt-12 mb-4 flex items-center gap-3">
+          <span class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 font-bold text-sm">7</span>
+          Changes to This Policy
+        </h2>
+        <p class="text-slate-600">We may update this Privacy Policy periodically. Your continued use of FreeLock after updates means you accept the changes.</p>
 
-      <h3>8. Contact Us</h3>
-      <p>Questions about this Privacy Policy? Contact us at <strong>FreeLock@fromamerica-llc.com</strong>.</p>
+        <h2 class="text-2xl font-bold text-slate-900 mt-12 mb-4 flex items-center gap-3">
+          <span class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 font-bold text-sm">8</span>
+          Contact Us
+        </h2>
+        <p class="text-slate-600">Questions about this Privacy Policy? Contact us at <a href="mailto:FreeLock@fromamerica-llc.com" class="text-orange-600 hover:text-orange-700 font-semibold underline">FreeLock@fromamerica-llc.com</a>.</p>
 
-      <hr />
-      <p><strong>Bottom Line:</strong> Your data is yours and yours alone. We don't collect, store, or share your data. FreeLock is 100% private by design.</p>
+        <div class="bg-gradient-to-r from-orange-100 to-yellow-100 border border-orange-200 rounded-xl p-6 mt-12">
+          <p class="font-bold text-slate-900 text-lg mb-2">Bottom Line:</p>
+          <p class="text-slate-800">Your data is yours and yours alone. We don't collect, store, or share your data. FreeLock is 100% private by design.</p>
+        </div>
+      </div>
     </article>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 FreeLock. All rights reserved. | <a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a></p>
+  <footer class="bg-white border-t border-orange-100 py-12 mt-12">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-2">
+          <img src="img/icon.webp" alt="FreeLock Icon" class="w-8 h-8 rounded-lg">
+          <span class="font-bold text-slate-900">FreeLock</span>
+        </div>
+        <div class="flex gap-6 text-sm text-slate-500">
+          <a href="index.html" class="hover:text-orange-600 transition">Home</a>
+          <a href="privacy.html" class="text-orange-600">Privacy</a>
+          <a href="terms.html" class="hover:text-orange-600 transition">Terms</a>
+        </div>
+      </div>
+      <div class="text-center text-slate-400 text-sm mt-8">
+        <p>&copy; 2025 FreeLock. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 </body>
